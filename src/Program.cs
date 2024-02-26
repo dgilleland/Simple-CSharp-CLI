@@ -1,12 +1,15 @@
 ﻿// See https://aka.ms/new-console-template for more information
-using static System.Console;
-
-internal class Program
+namespace MyApp
 {
-    private static void Main(string[] args)
+    using static System.Console;
+
+    internal class Program
     {
-        WriteLine("Hello, World!");
-        string terminalInput = string.Join(',', args);
-        WriteLine($"A special hello to {terminalInput}");
+        private static void Main(string[] args)
+        {
+            WriteLine("Hello, World!");
+            string terminalInput = string.Join(',', args);
+            WriteLine($"A special hello to {terminalInput}");
+        }
     }
 }
