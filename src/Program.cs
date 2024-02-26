@@ -1,15 +1,15 @@
 ﻿// See https://aka.ms/new-console-template for more information
-namespace MyApp
-{
-    using static System.Console;
+namespace MyApp; // The modern way of doing a namespace
 
-    internal class Program
+using static System.Console;
+
+internal class Program
+{
+    private static void Main(string[] args)
     {
-        private static void Main(string[] args)
-        {
-            WriteLine("Hello, World!");
-            string terminalInput = string.Join(',', args);
-            WriteLine($"A special hello to {terminalInput}");
-        }
+        Clear();
+        WriteLine("Hello, World!");
+        string terminalInput = string.Join("<burp>", args);
+        WriteLine($"A special hello to {terminalInput}");
     }
 }
